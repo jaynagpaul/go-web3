@@ -2,7 +2,7 @@
 [![GoDoc](https://godoc.org/github.com/jaynagpaul/go-web3?status.svg)](https://godoc.org/github.com/jaynagpaul/go-web3)
 
 A wrapper for [web3](https://github.com/ethereum/web3.js/) to be used with [GopherJS](https://github.com/gopherjs/gopherjs).
-Tries to enforce best practices. Most methods are called asynchronously to maintain support for metamask
+Tries to enforce best practices. Methods are called asynchronously to maintain support for metamask and mist.
 
 ## Documentation
 [GoDoc](https://godoc.org/github.com/jaynagpaul/go-web3)
@@ -19,7 +19,7 @@ import "github.com/jaynagpaul/go-web3"
 func main() {
     // Check if injected by browser
     w3 := web3.NewWeb3()
-    w3.Version.GetVersion(func(ver, err) {
+    w3.Version.GetEthereum(func(ver, err) {
         if err != nil {
             println(err)
         } else {
@@ -40,3 +40,4 @@ func main() {
 ## TODO
 * Framework for testing.
 * Finalize API.
+* Examples
