@@ -6,7 +6,7 @@ import (
 	"github.com/gopherjs/gopherjs/js"
 )
 
-// Versions of the various protocols and apis
+// Version of the various protocols and apis
 type Version struct {
 	API string // The ethereum JS api version.
 	js  *js.Object
