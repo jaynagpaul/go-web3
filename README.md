@@ -5,7 +5,7 @@ A wrapper for [web3](https://github.com/ethereum/web3.js/) to be used with [Goph
 Tries to enforce best practices. Methods are called asynchronously to maintain support for metamask and mist.
 
 ## Documentation
-[GoDoc](https://godoc.org/github.com/jaynagpaul/go-web3)
+[GoDoc](https://godoc.org/github.com/jaynagpaul/go-web3) [![Go Report Card](https://goreportcard.com/badge/github.com/jaynagpaul/go-web3)](https://goreportcard.com/report/github.com/jaynagpaul/go-web3)
 
 ## Getting Started
 
