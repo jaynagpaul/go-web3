@@ -18,8 +18,14 @@ import "github.com/jaynagpaul/go-web3"
 
 func main() {
     // Check if injected by browser
-    w3 := web3.GetWeb3()
-
+    w3 := web3.NewWeb3()
+    w3.Version.GetVersion(func(ver, err) {
+        if err != nil {
+            println(err)
+        } else {
+            println(ver) // Prints the version to the developer console.
+        }
+    })
     // TODO
 }
 ```
